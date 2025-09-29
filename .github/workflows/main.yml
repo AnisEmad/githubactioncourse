@@ -16,4 +16,4 @@ jobs:
         uses: actions/checkout@4.2.2
 
       - name: List repository files
-        uses: ls -la
+        run: ls -la
