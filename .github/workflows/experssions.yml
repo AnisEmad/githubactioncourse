@@ -1,0 +1,11 @@
+name: expressions
+on:
+  workflow_dispatch:
+
+jobs:
+  expression:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a message
+        run: echo "The job is running" 
+        if: ${{ gihub.even_name == 'push' }} 
