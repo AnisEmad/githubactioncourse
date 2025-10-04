@@ -12,6 +12,8 @@ jobs:
           npm run build 
           working-dircetory: ./temp
           shell: bash
-
+      - run: print %ENV
+        shell: perl {0}
+          
     
     
